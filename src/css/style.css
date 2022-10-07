@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2632;
+    height: 100vh;
+}
+
+.container-conselhos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #323a49;
+    width: 525px;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.container-conselhos #id-conselho{
+    color: #52ffa8;
+    font-size: 1.6rem;
+}
+
+.container-conselhos #conselho{
+    color: #cee3e9;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 32px 0 40px 0;
+}
+
+.container-conselhos picture{
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+.container-conselhos #botao-novo-conselho{
+    position: absolute;
+    bottom: -28px;
+    background-color: #1ffb8d;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;    
+    border: solid rgba(0, 0, 0, 0.134) 2px;
+}
+.container-conselhos #botao-novo-conselho:hover{
+    box-shadow: #00fa7da3 0px 0px 25px -2px; 
+    cursor: pointer;
+}
+.container-conselhos #botao-novo-conselho img{
+    transform: translateY(10%);
+}
