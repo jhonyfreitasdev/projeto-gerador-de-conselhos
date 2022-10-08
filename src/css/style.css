@@ -42,7 +42,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    transition: 0.5s ease-in-out;    
+    transition: 0.4s ease-in-out;    
     border: solid rgba(0, 0, 0, 0.134) 2px;
 }
 .container-conselhos #botao-novo-conselho:hover{
