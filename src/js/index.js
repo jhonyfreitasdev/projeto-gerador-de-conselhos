@@ -1,5 +1,7 @@
 mostrarConselhoAleatorio()
 
+const botao = document.getElementById("botao-novo-conselho") 
+
 async function criarConselhoAleatorio (){
     const url = "https://api.adviceslip.com/advice"
     const resposta = await fetch(url)
@@ -15,4 +17,4 @@ async function mostrarConselhoAleatorio (){
     document.getElementById("conselho").innerHTML = conselhoAleatorio
 }
 
-document.getElementById("botao-novo-conselho").addEventListener("click", ()=> mostrarConselhoAleatorio())
+botao.addEventListener("click", ()=> mostrarConselhoAleatorio())
