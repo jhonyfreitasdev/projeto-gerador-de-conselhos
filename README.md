@@ -1,5 +1,5 @@
-# Project Interactive Card
-Desafio feito pelo site do frontend mentor, um formulário que vai atualizando as informações preenchidas nele, em um cartão modelo ao lado automaticamente.
+# Gerador de conselhos aleatórios
+Um gerador de conselhos aletórios puxados de uma API com o clique de um botão
 
 ## 🔗 Acesso ao projeto
 [<img src="src/gif/tela.gif">](https://jhonyfreitasdev.github.io/projeto-gerador-de-conselhos/)
