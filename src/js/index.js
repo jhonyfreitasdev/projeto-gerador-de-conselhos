@@ -1,5 +1,3 @@
-mostrarConselhoAleatorio()
-
 const botao = document.getElementById("botao-novo-conselho") 
 
 async function criarConselhoAleatorio (){
@@ -17,4 +15,6 @@ async function mostrarConselhoAleatorio (){
     document.getElementById("conselho").innerHTML = conselhoAleatorio
 }
 
-botao.addEventListener("click", ()=> mostrarConselhoAleatorio())
+botao.addEventListener("click", mostrarConselhoAleatorio)
+
+mostrarConselhoAleatorio()
