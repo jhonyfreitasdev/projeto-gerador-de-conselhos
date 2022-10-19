@@ -1,20 +1,17 @@
-const botao = document.getElementById("botao-novo-conselho") 
+const botao = document.getElementById("botao-novo-conselho");
+const idDoConselho = document.getElementById("id-conselho");
+const textoDoConselho = document.getElementById("conselho"); 
 
-async function criarConselhoAleatorio (){
-    const url = "https://api.adviceslip.com/advice"
-    const resposta = await fetch(url)
-    return await resposta.json()
+async function mostrarConselho (){
+    const resposta = await fetch("https://api.adviceslip.com/advice")
+    const json = await resposta.json()
+    const idConselho = json.slip.id
+    const conselhoAleatorio = json.slip.advice
+
+    idDoConselho.innerHTML = `Advice # ${idConselho}`
+    textoDoConselho.innerHTML = conselhoAleatorio
 }
 
-async function mostrarConselhoAleatorio (){
-    const respostaConselho = await criarConselhoAleatorio()
-    const idConselho = respostaConselho.slip.id
-    const conselhoAleatorio = respostaConselho.slip.advice
+botao.addEventListener("click", mostrarConselho)
 
-    document.getElementById("id-conselho").innerHTML = `Advice # ${idConselho}`
-    document.getElementById("conselho").innerHTML = conselhoAleatorio
-}
-
-botao.addEventListener("click", mostrarConselhoAleatorio)
-
-mostrarConselhoAleatorio()
+mostrarConselho()
