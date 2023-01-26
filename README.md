@@ -2,6 +2,8 @@
 Um gerador de conselhos aletórios puxados de uma API com o clique de um botão
 
 ## 🔗 Acesso ao projeto
+<a href="https://jhonyfreitasdev.github.io/projeto-gerador-de-conselhos/">Clique aqui para ir para a página</a>
+
 [<img src="src/gif/tela.gif">](https://jhonyfreitasdev.github.io/projeto-gerador-de-conselhos/)
 
 ## 🛠 Skills
